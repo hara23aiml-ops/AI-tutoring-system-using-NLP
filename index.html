@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Tutoring System</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <section id="loginScreen" class="login-screen">
+      <div class="login-panel">
+        <div class="brand-row">
+          <div class="brand-mark">T</div>
+          <div>
+            <p class="eyebrow">AI Tutoring System</p>
+            <p class="system-label">Personal Learning Desk</p>
+          </div>
+        </div>
+        <h1>Login to continue</h1>
+        <p class="hero-copy">Enter a student ID to open a separate study session with saved practice progress.</p>
+        <div class="login-form">
+          <label for="loginStudentId">Student ID</label>
+          <input id="loginStudentId" value="guest" autocomplete="off" placeholder="Example: student101">
+          <button id="enterAppButton" type="button">Open Dashboard</button>
+        </div>
+      </div>
+    </section>
+
+    <main id="appShell" class="app-shell is-hidden">
+      <section class="hero">
+        <div>
+          <div class="brand-row">
+            <div class="brand-mark">T</div>
+            <div>
+              <p class="eyebrow">AI Tutoring System</p>
+              <p class="system-label">Personal Learning Desk</p>
+            </div>
+          </div>
+          <h1>AI Tutoring System</h1>
+          <p class="hero-copy">A focused study workspace for asking questions, practicing modules, checking written answers, and tracking each learner's progress.</p>
+          <div class="hero-actions" aria-label="Project capabilities">
+            <span>Subject modules</span>
+            <span>Answer checking</span>
+            <span>Optional LLM help</span>
+            <span>Student progress</span>
+          </div>
+        </div>
+        <div class="status-grid" aria-label="System summary">
+          <div class="metric">
+            <span id="subjectCount">0</span>
+            <p>Subjects</p>
+          </div>
+          <div class="metric">
+            <span id="lessonCount">0</span>
+            <p>Lessons</p>
+          </div>
+          <div class="metric">
+            <span id="llmStatus">Offline</span>
+            <p>LLM Mode</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="control-strip">
+          <div class="login-card">
+            <div class="login-status">
+            <span>Active Student</span>
+            <strong id="activeStudent">guest</strong>
+          </div>
+          <div class="login-row">
+            <input id="studentId" value="guest" autocomplete="off" placeholder="Enter student ID">
+            <button id="loginButton" type="button">Switch</button>
+          </div>
+        </div>
+        <div class="field">
+          <label for="subjectSelect">Subject</label>
+          <select id="subjectSelect">
+            <option value="">All Subjects</option>
+          </select>
+        </div>
+        <label class="llm-toggle">
+          <input id="useLlm" type="checkbox">
+          <span>Use LLM answer</span>
+        </label>
+      </section>
+
+      <section class="layout">
+        <aside class="sidebar">
+          <div class="panel-heading">
+            <div>
+              <h2>Course Modules</h2>
+              <p>Pick a topic before practice.</p>
+            </div>
+          </div>
+          <div id="subjectOverview" class="subject-overview"></div>
+          <div id="lessonList" class="lesson-list"></div>
+        </aside>
+
+        <section class="workspace">
+          <section class="tutor-panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Ask the Tutor</h2>
+                <p>Ask a question from the selected subject.</p>
+              </div>
+            </div>
+            <div class="question-row">
+              <input id="questionInput" placeholder="Example: Explain photosynthesis with an example">
+              <button id="askButton" type="button">Ask</button>
+            </div>
+            <div class="quick-prompts" aria-label="Quick questions">
+              <button type="button" data-question="Explain photosynthesis with an example">Photosynthesis</button>
+              <button type="button" data-question="Solve 3x + 5 = 20 step by step">Linear equation</button>
+              <button type="button" data-question="What is tokenization in NLP?">Tokenization</button>
+            </div>
+            <article id="answerCard" class="response-card empty">Your tutor response will appear here.</article>
+          </section>
+
+          <section class="split-panels">
+            <section class="practice-panel">
+              <div class="panel-heading">
+                <div>
+                  <h2>Practice</h2>
+                  <p>Attempt a short check from the selected module.</p>
+                </div>
+                <button id="startQuiz" type="button">Start Quiz</button>
+              </div>
+              <p id="quizQuestion" class="quiz-question">Select a lesson, then start a quiz.</p>
+              <textarea id="answerInput" placeholder="Write your answer here"></textarea>
+              <button id="submitAnswer" type="button">Submit Answer</button>
+              <article id="feedbackCard" class="response-card empty">Feedback will appear here.</article>
+            </section>
+
+            <section class="progress-panel">
+              <div class="panel-heading">
+                <div>
+                  <h2>Progress</h2>
+                  <p>Recent attempts for this student.</p>
+                </div>
+                <button id="refreshProgress" type="button">Refresh</button>
+              </div>
+              <p id="progressSummary" class="progress-summary">No attempts yet.</p>
+              <ul id="progressList" class="progress-list"></ul>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

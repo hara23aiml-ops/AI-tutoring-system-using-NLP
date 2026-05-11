@@ -1,0 +1,130 @@
+{
+  "lessons": [
+    {
+      "id": "nlp-basics",
+      "subject": "Artificial Intelligence",
+      "title": "NLP Basics",
+      "level": "Beginner",
+      "keywords": ["nlp", "language", "text", "computer", "meaning"],
+      "summary": "Understand how Natural Language Processing helps computers work with human language.",
+      "content": "Natural Language Processing, or NLP, is a field of artificial intelligence that helps computers understand, analyze, and generate human language. In an intelligent tutoring system, NLP can read a student's question, compare answers with expected concepts, and generate helpful feedback.",
+      "example": "If a student asks 'What is tokenization?', the system detects the NLP topic and opens the lesson about breaking text into smaller units.",
+      "quiz": {
+        "question": "What is NLP and why is it useful in an intelligent tutoring system?",
+        "expected_answer": "NLP is an artificial intelligence technique that helps computers understand human language. It is useful in tutoring systems because it can process student questions, evaluate written answers, and provide feedback."
+      }
+    },
+    {
+      "id": "tokenization",
+      "subject": "Artificial Intelligence",
+      "title": "Tokenization",
+      "level": "Beginner",
+      "keywords": ["token", "tokenization", "words", "sentence", "split"],
+      "summary": "Learn how text is split into useful pieces for analysis.",
+      "content": "Tokenization is the process of splitting text into smaller units called tokens. A token can be a word, number, symbol, or sentence part. Most NLP systems tokenize text before searching, comparing, classifying, or evaluating answers.",
+      "example": "The sentence 'NLP helps students learn' can become the tokens: NLP, helps, students, learn.",
+      "quiz": {
+        "question": "Explain tokenization with one example.",
+        "expected_answer": "Tokenization splits text into smaller units called tokens, such as words. For example, 'I learn NLP' becomes I, learn, and NLP."
+      }
+    },
+    {
+      "id": "answer-evaluation",
+      "subject": "Artificial Intelligence",
+      "title": "Answer Evaluation",
+      "level": "Intermediate",
+      "keywords": ["answer", "evaluation", "score", "keywords", "feedback"],
+      "summary": "See how the tutor checks student answers and generates feedback.",
+      "content": "Answer evaluation compares a student's response with an expected answer. A simple system can compare important keywords, while an advanced system may use semantic similarity. The goal is not only to mark answers, but also to guide students toward missing concepts.",
+      "example": "If the expected answer includes 'tokenization', 'tokens', and 'text', the tutor checks whether the student's answer covers those ideas.",
+      "quiz": {
+        "question": "How does answer evaluation help students learn?",
+        "expected_answer": "Answer evaluation helps students learn by comparing their answer with expected concepts, calculating a score, identifying missing keywords, and giving useful feedback."
+      }
+    },
+    {
+      "id": "adaptive-learning",
+      "subject": "Artificial Intelligence",
+      "title": "Adaptive Learning",
+      "level": "Intermediate",
+      "keywords": ["adaptive", "personalized", "progress", "mastery", "student"],
+      "summary": "Understand how the system can personalize learning based on student performance.",
+      "content": "Adaptive learning changes the learning path based on student performance. If a student scores high, the tutor can suggest a harder topic. If the student struggles, it can recommend revision, simpler examples, or more practice questions.",
+      "example": "A student with low score in tokenization is advised to revise the tokenization lesson before moving to answer evaluation.",
+      "quiz": {
+        "question": "What is adaptive learning in an intelligent tutoring system?",
+        "expected_answer": "Adaptive learning personalizes the learning path based on student progress and performance. It recommends revision or advanced topics depending on mastery."
+      }
+    },
+    {
+      "id": "math-linear-equations",
+      "subject": "Mathematics",
+      "title": "Linear Equations",
+      "level": "Beginner",
+      "keywords": ["linear", "equation", "variable", "solve", "algebra"],
+      "summary": "Learn how to solve equations where the variable has power one.",
+      "content": "A linear equation is an equation in which the highest power of the variable is one. To solve it, keep the equation balanced by performing the same operation on both sides until the variable is isolated.",
+      "example": "For 2x + 3 = 11, subtract 3 from both sides to get 2x = 8, then divide by 2 to get x = 4.",
+      "quiz": {
+        "question": "Solve 3x + 5 = 20 and explain the steps.",
+        "expected_answer": "Subtract 5 from both sides to get 3x equals 15, then divide by 3. The value of x is 5."
+      }
+    },
+    {
+      "id": "science-photosynthesis",
+      "subject": "Science",
+      "title": "Photosynthesis",
+      "level": "Beginner",
+      "keywords": ["photosynthesis", "plant", "sunlight", "carbon", "oxygen", "glucose"],
+      "summary": "Understand how plants make food using sunlight.",
+      "content": "Photosynthesis is the process by which green plants use sunlight, carbon dioxide, and water to make glucose. Oxygen is released as a by-product. Chlorophyll in leaves helps capture sunlight.",
+      "example": "A plant leaf uses sunlight energy to convert carbon dioxide and water into glucose and oxygen.",
+      "quiz": {
+        "question": "What is photosynthesis?",
+        "expected_answer": "Photosynthesis is the process by which green plants use sunlight, carbon dioxide, and water to make glucose and release oxygen."
+      }
+    },
+    {
+      "id": "english-tenses",
+      "subject": "English",
+      "title": "Simple Present Tense",
+      "level": "Beginner",
+      "keywords": ["simple", "present", "tense", "habit", "routine", "verb"],
+      "summary": "Learn how simple present tense is used for habits, routines, and facts.",
+      "content": "The simple present tense describes habits, routines, general truths, and repeated actions. With he, she, or it, most verbs take s or es.",
+      "example": "I play cricket every day. She studies English. The sun rises in the east.",
+      "quiz": {
+        "question": "When do we use the simple present tense?",
+        "expected_answer": "We use the simple present tense for habits, routines, repeated actions, and general truths."
+      }
+    },
+    {
+      "id": "cs-algorithms",
+      "subject": "Computer Science",
+      "title": "Algorithms",
+      "level": "Beginner",
+      "keywords": ["algorithm", "steps", "problem", "input", "output", "logic"],
+      "summary": "Understand algorithms as step-by-step solutions to problems.",
+      "content": "An algorithm is a clear step-by-step procedure used to solve a problem. It takes input, follows logical steps, and produces output. Algorithms are important in programming because they define how a task should be completed.",
+      "example": "A recipe is like an algorithm because it gives ordered steps to produce a final dish.",
+      "quiz": {
+        "question": "What is an algorithm?",
+        "expected_answer": "An algorithm is a step-by-step procedure or set of logical instructions used to solve a problem and produce an output."
+      }
+    },
+    {
+      "id": "history-industrial-revolution",
+      "subject": "History",
+      "title": "Industrial Revolution",
+      "level": "Intermediate",
+      "keywords": ["industrial", "revolution", "machines", "factory", "production"],
+      "summary": "Learn how machines and factories changed society and production.",
+      "content": "The Industrial Revolution was a period of major change when hand production was replaced by machines and factories. It increased production, changed transportation, and led to urban growth.",
+      "example": "Textile machines allowed cloth to be produced faster than hand weaving.",
+      "quiz": {
+        "question": "Why was the Industrial Revolution important?",
+        "expected_answer": "The Industrial Revolution was important because machines and factories increased production, changed transportation, and caused major social and economic changes."
+      }
+    }
+  ]
+}
